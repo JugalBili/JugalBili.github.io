@@ -1,0 +1,109 @@
+*{
+    padding: 0 0;
+    margin: 0 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+header{
+    background: #000;
+    border-bottom: 5px solid #000;
+    height: 60px; 
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+header ul{
+    height: 60px;
+    list-style: none;
+    margin: 0 auto; 
+    padding: 0;
+    text-align: center;
+}
+
+header li, header a{
+    color: #fff;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px;
+    list-style: none;
+    transition: background .5s; 
+
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+
+
+header .active {
+    background: #117bff;
+    cursor: pointer; 
+}
+
+  
+  
+header li:hover:not(.active) {
+    background: #0a50a7;
+    cursor: pointer; 
+    transition: background .5s;  
+  }
+
+  /*
+header a:hover {
+    background: #0a50a7;
+    cursor: pointer; 
+    transition: background .5s;  
+  }
+*/
+
+
+  
+.home{
+    text-align: center;
+    height: 600px;
+    position: relative;
+    overflow:hidden;
+}
+
+.home .backgroundImage{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/circuitboard.jpg") center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    filter: blur(3px);
+    transform: scale(1.02);
+}
+
+
+.home .container{
+    color: #fff;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.home h1{
+    font-size: 40px;
+
+}
+.home p{
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.home img{
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 1px black; 
+}
