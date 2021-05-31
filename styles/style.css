@@ -4,13 +4,18 @@
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+
 }
 
 header{
-    background: #000;
-    border-bottom: 5px solid #000;
+    background: #fff;
+    border-bottom: 5px solid #fff;
     height: 60px; 
     width: 100%;
     position: fixed;
@@ -26,7 +31,7 @@ header ul{
 }
 
 header li, header a{
-    color: #fff;
+    color: #000;
     display: inline-block;
     height: 60px;
     line-height: 60px;
@@ -36,7 +41,7 @@ header li, header a{
 
     font-family: "Oswald", sans-serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
   }
@@ -44,14 +49,14 @@ header li, header a{
 
 
 header .active {
-    background: #117bff;
+    color: #13aff0;
     cursor: pointer; 
 }
 
 
 
-header li:hover:not(.active) {
-    background: #0a50a7;
+header a:hover:not(.active), header li:hover:not(.active) {
+    color: #269ed0;
     cursor: pointer; 
     transition: background .5s;  
   }
@@ -81,6 +86,8 @@ header a:hover {
     width: 100%;
     filter: blur(3px);
     transform: scale(1.02);
+    margin: 0 0;
+    padding: 0 0;
 }
 
 
@@ -110,6 +117,111 @@ header a:hover {
 
 
 .summary {
-    height:500px;
+    height:350px;
+    background-color: #13aff0;
+    color: #fff;
+}
 
+.summary .container{
+    position: relative;
+    top: 60px;
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 26px; /* 1.75em */
+}
+
+
+.summary p{
+    text-align: left;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+h2::after{
+    content:' ';
+    display: block;
+    width: 25px;
+    border:2px solid white; 
+    margin: 0px auto;  
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.education{ height: 500px; text-align: center;}
+
+.education h2::after{ border:2px solid #13aff0; 
+}
+
+.education .container{
+    position: relative;  
+    top: 60px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.education ul{
+    list-style:circle inside black;
+    padding: 20px;
+}
+
+.education #waterloo{
+    position: relative;
+    text-align: left;
+    padding: 10px 10px;
+    width: 600px;
+    height: 125px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+
+}
+
+.education #glen{
+    position: relative;
+    text-align: left;
+    padding: 10px 10px;
+    width: 600px;
+    height: 125px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+
+.education li{ 
+    width: 400px;
+
+}
+
+.education h3{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.education h4{
+    font-weight: 500;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.education .text{
+    position: relative;
+    width: 425px;
+    float: left;
+}
+
+.education .logo{
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    float: right;
+    margin: 0 20px;
+}
+
+.skills{
+    height:200px;
+    background-color: #13aff0;
 }
