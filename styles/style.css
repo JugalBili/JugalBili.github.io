@@ -1,67 +1,70 @@
-*{
-    padding: 0 0;
-    margin: 0 0;
+* {
+  padding: 0 0;
+  margin: 0 0;
+  /*scroll-behavior: smooth;*/
+  
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
-h1, h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
 }
 
-header{
-    background: #fff;
-    border-bottom: 5px solid #fff;
-    height: 60px; 
-    width: 100%;
-    position: fixed;
-    z-index: 10;
+nav {
+  background: #fff;
+  border-bottom: 5px solid #fff;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.5);
 }
 
-header ul{
-    height: 60px;
-    list-style: none;
-    margin: 0 auto; 
-    padding: 0;
-    text-align: center;
+nav ul {
+  height: 60px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
 }
 
-header li, header a{
-    color: #000;
-    display: inline-block;
-    height: 60px;
-    line-height: 60px;
-    padding: 0 10px;
-    list-style: none;
-    transition: background .5s; 
+nav li,
+nav a {
+  color: #000;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 10px;
+  list-style: none;
+  transition: background 0.5s;
 
-    font-family: "Oswald", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 
-
-
-header .active {
-    color: #13aff0;
-    cursor: pointer; 
+nav .active {
+  color: #13aff0;
+  cursor: pointer;
 }
 
 
+nav a:hover:not(.active),
+nav li:hover:not(.active) {
+  color: #269ed0; 
+  cursor: pointer;
+  transition: background 0.5s;
+}
 
-header a:hover:not(.active), header li:hover:not(.active) {
-    color: #269ed0;
-    cursor: pointer; 
-    transition: background .5s;  
-  }
 
-  /*
+/*
 header a:hover {
     background: #0a50a7;
     cursor: pointer; 
@@ -69,159 +72,225 @@ header a:hover {
   }
 */
 
-
-
-.home{
-    text-align: center;
-    height: 100vh;
-    position: relative;
-    overflow:hidden;
+.home {
+  text-align: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
-.home .backgroundImage{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/circuitboard.jpg") center center no-repeat;
-    background-size: cover;
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    filter: blur(3px);
-    transform: scale(1.02);
-    margin: 0 0;
-    padding: 0 0;
+.home .backgroundImage {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/circuitboard.jpg") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  filter: blur(3px);
+  transform: scale(1.02);
+  margin: 0 0;
+  padding: 0 0;
 }
 
-
-.home .container{
-    color: #fff;
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 500px;
+.home .container {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
 }
 
-.home h1{
-    font-size: 40px;
-
+.home h1 {
+  font-size: 40px;
 }
-.home p{
-    font-size: 20px;
-    font-weight: 400;
-
+.home p {
+  font-size: 20px;
+  font-weight: 400;
 }
 
-.home img{
-    border-radius: 50%;
-    box-shadow: 0px 0px 20px 1px black; 
-} 
-
+.home img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px 1px black;
+}
 
 .summary {
-    height:350px;
-    background-color: #13aff0;
-    color: #fff;
+  height: 350px;
+  background-color: #13aff0;
+  color: #fff;
 }
 
-.summary .container{
-    position: relative;
-    top: 60px;
-    text-align: center;
-    width: 800px;
-    margin: 0 auto;
+.summary .container {
+  position: relative;
+  top: 60px;
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
 }
 
-h2{
-    font-size: 26px; /* 1.75em */
+h2 {
+  font-size: 26px; /* 1.75em */
 }
 
-
-.summary p{
-    text-align: left;
-    margin-top: 30px;
-    font-size: 18px;
+.summary p {
+  text-align: left;
+  margin-top: 30px;
+  font-size: 18px;
 }
 
-h2::after{
-    content:' ';
-    display: block;
-    width: 25px;
-    border:2px solid white; 
-    margin: 0px auto;  
-    margin-top: 10px;
-    margin-bottom: 20px;
+h2::after {
+  content: " ";
+  display: block;
+  width: 25px;
+  border: 2px solid white;
+  margin: 0px auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-
-.education{ height: 500px; text-align: center;}
-
-.education h2::after{ border:2px solid #13aff0; 
+h3 {
+  font-weight: 600;
+  font-size: 18px;
 }
 
-.education .container{
-    position: relative;  
-    top: 60px;
-    width: 1200px;
-    margin: 0 auto;
+h4 {
+  font-weight: 500;
+  font-size: 16px;
+  font-style: italic;
 }
 
-.education ul{
-    list-style:circle inside black;
-    padding: 20px;
+.education {
+  height: 500px;
+  text-align: center;
 }
 
-.education #waterloo{
-    position: relative;
-    text-align: left;
-    padding: 10px 10px;
-    width: 600px;
-    height: 125px;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
-    margin: 20px auto;
-
+.education h2::after {
+  border: 2px solid #13aff0;
 }
 
-.education #glen{
-    position: relative;
-    text-align: left;
-    padding: 10px 10px;
-    width: 600px;
-    height: 125px;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
-    margin: 0 auto;
+.education .container {
+  width: 800px;
+  position: relative;
+  top: 60px;
+  margin: 0 auto;
 }
 
-.education li{ 
-    width: 400px;
-
+.education ul {
+  list-style: circle inside black;
+  padding: 20px;
 }
 
-.education h3{
-    font-weight: 600;
-    font-size: 18px;
+.education #waterloo {
+  position: relative;
+  text-align: left;
+  padding: 10px 10px;
+  width: 600px;
+  height: 125px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin: 20px auto;
 }
 
-.education h4{
-    font-weight: 500;
-    font-size: 16px;
-    font-style: italic;
+.education #glen {
+  position: relative;
+  text-align: left;
+  padding: 10px 10px;
+  width: 600px;
+  height: 125px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin: 0 auto;
 }
 
-.education .text{
-    position: relative;
-    width: 425px;
-    float: left;
+.education li {
+  width: 400px;
 }
 
-.education .logo{
-    border-radius: 50%;
-    position: relative;
-    top: 50%;
-    transform: translate(0, -50%);
-    float: right;
-    margin: 0 20px;
+.education .text {
+  position: relative;
+  width: 425px;
+  float: left;
 }
 
-.skills{
-    height:200px;
-    background-color: #13aff0;
+.education .logo {
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  float: right;
+  margin: 0 20px;
+}
+
+.projects {
+  height: 1180px;
+  text-align: center;
+}
+
+.projects h2::after {
+  border: 2px solid #13aff0;
+}
+
+.projects .container {
+  width: 60%;
+  position: relative;
+  top: 60px;
+  margin: 0 auto;
+}
+
+.projects .proj {
+  background-color: #13aff0;
+  color: #fff;
+  box-shadow: 0px 0px 0px 0px white;
+  border-radius: 5px;
+  width: 300px;
+  height: 475px;
+  margin: 10px 10px;
+  padding: 15px 15px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  transition: box-shadow 0.3s;
+}
+
+.projects .proj:hover {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.8);
+  transition: box-shadow 0.3s;
+}
+
+.projects h4 {
+  margin-bottom: 20px;
+}
+
+.projects h4::after {
+  content: " ";
+  display: block;
+  width: 25px;
+  border: 2px solid white;
+  margin: 0px auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.proj p {
+  height: 180px;
+}
+
+.projects img {
+  height: 150px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.projects a img {
+  border-radius: 50%;
+  height: 35px;
+  position: relative;
+  top: 15px;
+  box-shadow: 0px 0px 0px 0px #fff;
+  transition: box-shadow 0.2s;
+}
+
+.projects a img:hover {
+  box-shadow: 0px 0px 5px 2px #fff;
+  transition: box-shadow 0.2s;
 }

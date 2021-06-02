@@ -9,22 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel='icon' href="images/profile pic 1.png">
     <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" src="/scripts/script.js" defer></script>
 </head>
 
 <body>
-    <header>
+    <nav>
         <ul>
-            <li><a href="#home" class="active">Home</a></li>
+            <!--
+            <li><a href="#home">Home</a></li>
             <li><a href="#summary">Summary</a></li>
-            <li>Education</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Experience</li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>    
+            -->
+            <li><a class="link active" onclick="scrollFunct(this, 'home')">Home</a></li>
+            <li><a class="link" onclick="scrollFunct(this, 'summary')">Summary</a></li>
+            <li><a class="link" onclick="scrollFunct(this, 'education')">Education</a></li>
+            <li><a class="link" onclick="scrollFunct(this, 'skills')">Skills</a></li>
+            <li><a class="link" onclick="scrollFunct(this, 'projects')">Projects</a></li>
+            <li><a class="link" onclick="scrollFunct(this, 'experience')">Experience</a></li>
         </ul>
-    </header>
+    </nav>
 
 
-    <div class="home">
+    <div class="home" id="home">
         <div class="backgroundImage"></div>
         <div class="container">
             <img src="images/picture.jpg" height="150px">
@@ -34,7 +43,7 @@
     </div>
 
     
-    <div class="summary">
+    <div class="summary" id="summary">
         <div class="container">
             <h2>Summary</h2>
             <p>
@@ -46,7 +55,7 @@
         </div>
     </div>
 
-    <div class="education">
+    <div class="education" id="education">
         <div class="container">
             <h2>Education</h2>
             <div id="waterloo">
@@ -75,7 +84,70 @@
         </div>
     </div>
 
-    <div class="skills">
+    <div class="projects" id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="proj" id="arduino">
+                <img src="/images/projects/carInside.jpeg">
+                <div class="text">
+                    <h3>Arduino RC Car</h3>
+                    <h4>Python & C/C++</h4>
+                    <p>
+                        Engineered a custom RC car from scratch using an Arduino microcontroller, motors and a bluetooth module.
+                        Programmed the car aswell as developped a custom GUI Python application to control the car using a computer.
+                    </p>
+                    <a href="https://github.com/JugalBili/Arduino-RC-Car-With-GUI" target="_blank"><img src="/images/githubLogo.jpg"></a>
+                </div>
+            </div>
+            <div class="proj" id="chatbot">
+                <img src="/images/projects/discordBot.png">
+                <div class="text">
+                    <h3>Discord Chatbot</h3>
+                    <h4>Python & MySQL</h4>
+                    <p>
+                        Automated chatbot was made for the CFM University discord server to help students keep track of assignment deadlines.
+                        Provides reminders of assignments starting and due each day and timline of upcoming deadlines.
+                    </p>
+                    <a href="https://github.com/JugalBili/Python-CFM-Discord-Bot" target="_blank"><img src="/images/githubLogo.jpg"></a>
+                </div>
+            </div>
+            <div class="proj" id="api">
+                <img src="/images/projects/apiExample.png">
+                <div class="text">
+                    <h3>Game Stats API</h3>
+                    <h4>Flask(Python), MongoDB & REST API</h4>
+                    <p>
+                        Developed a RESTful API to allow users to track and store player game data such as; name, role, rank points, money in wallet, money in bank, and more.
+                        This API is created using Flask (Python) and MongoDB to store user data as JSON entries.
+                    </p>
+                    <a href="https://github.com/JugalBili/Game-Stats-API" target="_blank"><img src="/images/githubLogo.jpg"></a>
+                </div>
+            </div>
+            <div class="proj" id="equation">
+                <img src="/images/projects/eqSolver.png">
+                <div class="text">
+                    <h3>Quadratic/Linear EQ Solver</h3>
+                    <h4>Java (Swing Framework)</h4>
+                    <p>
+                        Program was made to help grade 9/10 students understand the concepts of linear and quadratic graphs. 
+                        Includes examples, a graph claculator and a step by step procedure on how to graph either a linear or quadratic equation.
+                    </p>
+                    <a href="https://github.com/JugalBili/Java-Linear-Quad-Eq-Solver" target="_blank"><img src="/images/githubLogo.jpg"></a>
+                </div>
+            </div>
+            <div class="proj" id="connect">
+                <img src="/images/projects/connect4.png">
+                <div class="text">
+                    <h3>Connect Four</h3>
+                    <h4>Java (Swing Framework)</h4>
+                    <p>
+                        Designed and programmed a Connect Four game. 
+                        Consists of a 7x6 game board and a button for each column where you can press the respective button for a column to drop your coin in.
+                    </p>
+                    <a href="https://github.com/JugalBili/Java-ConnectFour" target="_blank"><img src="/images/githubLogo.jpg"></a>
+                </div>
+            </div>
+        </div>
 
     </div>
 
