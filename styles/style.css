@@ -2,7 +2,10 @@
   padding: 0 0;
   margin: 0 0;
   /*scroll-behavior: smooth;*/
-  
+}
+
+html{
+  font-size: 12px;
 }
 
 body {
@@ -18,7 +21,7 @@ h2 {
 nav {
   background: #fff;
   border-bottom: 5px solid #fff;
-  height: 60px;
+  height: 5em; /* 60px */
   width: 100%;
   position: fixed;
   z-index: 10;
@@ -26,10 +29,9 @@ nav {
 }
 
 nav ul {
-  height: 60px;
+  height: 5em; /* 60px */
   list-style: none;
   margin: 0 auto;
-  padding: 0;
   text-align: center;
 }
 
@@ -37,14 +39,14 @@ nav li,
 nav a {
   color: #000;
   display: inline-block;
-  height: 60px;
-  line-height: 60px;
+  height: 5em; /* 60px */
+  line-height: 5em; /* 60px */
   padding: 0 10px;
   list-style: none;
   transition: background 0.5s;
 
   font-family: "Oswald", sans-serif;
-  font-size: 14px;
+  font-size: 1em;
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
@@ -102,40 +104,43 @@ header a:hover {
 }
 
 .home h1 {
-  font-size: 40px;
+  /*font-size: 40px;*/
+  font-size: 3.5em;
 }
 .home p {
-  font-size: 20px;
+  font-size: 1.7em;/*20px*/
   font-weight: 400;
 }
 
 .home img {
   border-radius: 50%;
+  height: 13em; /* 150 px*/
   box-shadow: 0px 0px 20px 1px black;
 }
 
 .summary {
-  height: 350px;
+  height: 27em; /* 350 px */
+  width: 100%;
   background-color: #13aff0;
   color: #fff;
 }
 
 .summary .container {
   position: relative;
-  top: 60px;
+  top: 4em; /* 60px*/
   text-align: center;
-  width: 800px;
+  width: 60%; /* 800px*/
   margin: 0 auto;
 }
 
 h2 {
-  font-size: 26px; /* 1.75em */
+  font-size: 2.25em; /* 26px */
 }
 
 .summary p {
   text-align: left;
   margin-top: 30px;
-  font-size: 18px;
+  font-size: 1.4em; /* 18px */
 }
 
 h2::after {
@@ -150,17 +155,18 @@ h2::after {
 
 h3 {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.5em; /* 18px */
 }
 
 h4 {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.4em; /* 16px */
   font-style: italic;
 }
 
 .education {
-  height: 500px;
+  /* border: 2px solid black; */
+  height: 43em; /* 500px */
   text-align: center;
 }
 
@@ -170,46 +176,37 @@ h4 {
 }
 
 .education .container {
-  width: 800px;
+  /* border: 2px solid blue; */
+  width: 60%;
   position: relative;
-  top: 60px;
+  top: 5em; /* 60px */
   margin: 0 auto;
 }
 
 .education ul {
+  height: 50%;
   list-style: circle inside black;
-  padding: 20px;
+  padding: .75em 1.6em; /* 20px */
+  font-size: 1.25em;
 }
 
-.education #waterloo {
+.education .school {
   position: relative;
   text-align: left;
   padding: 10px 10px;
-  width: 600px;
-  height: 125px;
+  width: 50em; /* 55% / 600px*/
+  height: 10em; /* 125px */
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   margin: 20px auto;
 }
 
-.education #glen {
-  position: relative;
-  text-align: left;
-  padding: 10px 10px;
-  width: 600px;
-  height: 125px;
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  margin: 0 auto;
-}
-
 .education li {
-  width: 400px;
+  width: 25em; /* 400px */
 }
 
 .education .text {
   position: relative;
-  width: 425px;
   float: left;
 }
 
@@ -220,11 +217,98 @@ h4 {
   transform: translate(0, -50%);
   float: right;
   margin: 0 20px;
+  height: 100%; /* 120 px*/
 }
 
-.projects {
-  height: 1200px;
+
+
+.skills {
+  height: 55em; /* 700px */
+  /* border: 2px solid red; */
   text-align: center;
+}
+
+.skills .container{
+  position: relative;
+  top: 60px;
+  height: 85%;
+  width: 75%;
+  margin: 0 auto;
+  /*border: 2px solid blue;*/
+}
+
+.skills h2::after{
+  border: 2px solid #13aff0;
+}
+
+.skills .skill{
+  /*border: 2px solid green;*/
+  width: 35%;
+  height:6.7em; /* 80px*/
+  display: inline-block;
+  margin: 15px 10px;
+}
+
+.skills .text{
+  /*border: 2px solid black;*/
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.skills img{
+  height:60%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.skills .bar{
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  /*border: 2px solid purple;*/
+  height: 35px;
+  width: 65%;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #f0f0f2;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.skills .bar-inner{
+  position: relative;
+  height: 100%;
+  background-color: #13aff0;
+  border-radius: 9px;
+}
+
+.skills .bar-inner::after{
+  position: absolute;
+  right: 2.5%;
+  font-size: 1.2em;
+  font-weight: bold;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #fff;
+  content: attr(data);
+}
+
+.skills #python .bar-inner{width:70%}
+.skills #java .bar-inner{width:65%}
+.skills #c .bar-inner{width:50%}
+.skills #javascript .bar-inner{width:20%}
+.skills #html .bar-inner{width:40%}
+.skills #css .bar-inner{width:40%}
+.skills #sql .bar-inner{width:30%}
+
+
+.projects {
+  /* border:2px solid black; */
+  height:auto; /* 1200 px*/
+  text-align: center; 
 }
 
 .projects h2::after {
@@ -232,9 +316,11 @@ h4 {
 }
 
 .projects .container {
+  /* border: 2px solid blue;*/
   width: 60%;
   position: relative;
-  top: 60px;
+  padding: 4em 0;
+  /* top: 4em; /* 60px */ 
   margin: 0 auto;
 }
 
@@ -243,8 +329,8 @@ h4 {
   color: #fff;
   box-shadow: 0px 0px 0px 0px white;
   border-radius: 5px;
-  width: 300px;
-  height: 475px;
+  width: 25em; /* 300px  */
+   /* 475px */
   margin: 10px 10px;
   padding: 15px 15px;
   display: inline-block;
@@ -259,7 +345,7 @@ h4 {
 }
 
 .projects h4 {
-  margin-bottom: 20px;
+  margin-bottom: 1.5em; /* 20px */
 }
 
 .projects h4::after {
@@ -273,7 +359,8 @@ h4 {
 }
 
 .proj p {
-  height: 180px;
+  height: 12em; /* 180px*/
+  font-size: 1.3em;
 }
 
 .projects img {
@@ -289,6 +376,7 @@ h4 {
   top: 15px;
   box-shadow: 0px 0px 0px 0px #fff;
   transition: box-shadow 0.2s;
+  padding: 10px 10px;
 }
 
 .projects a img:hover {
@@ -298,13 +386,15 @@ h4 {
 
 
 .experience{
-  height: 525px;
+  /* border: 2px solid black; */
+  height: 44em; /* 525px */
   background-color: #f9f9f9;
 }
 
 .experience h2::after{border: 2px solid #13aff0}
 
 .experience .container{
+  /* border: 2px solid blue; */
   width: 80%;
   position: relative;
   top: 60px;
@@ -313,12 +403,17 @@ h4 {
 }
 
 .experience .exp{
+  /* border: 2px solid green; */  
   width: 25%;
-  height: 350px;
+  height: 26em; /* 350px*/
   display: inline-block;
   vertical-align: top;
   padding: 10px 10px;
   margin: 0 20px;
+}
+
+.experience .exp p{
+  font-size: 1.3em;
 }
 
 .experience h4::after {
@@ -333,13 +428,13 @@ h4 {
 
 .experience img{
   margin: 10px 10px;
-  height: 100px;
+  height: 9em; /* 100px */
   border-radius: 50%;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
 footer{
-  height: 200px;
+  height: 16em; /* 200px */
   width: 100%;
   background-color: #111;
   color: #fff;
@@ -366,8 +461,12 @@ footer h3::after{
   margin-bottom: 20px;
 }
 
+footer p{
+  font-size: 1.2em;
+}
+
 footer img{
-  height: 40px;
+  height: 3.5em; /*40px */
   border-radius: 50%;
   margin: 0 10px;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1);
