@@ -407,7 +407,7 @@ h4 {
 .experience h2::after{border: 2px solid #13aff0}
 
 .experience .container{
-  border: 2px solid blue; 
+  /*border: 2px solid blue; */
   width: fit-content;
   max-width: 100%;
   position: relative;
@@ -418,7 +418,7 @@ h4 {
 }
 
 .experience .exp{
-  border: 2px solid green; 
+  /*border: 2px solid green; */
   width: 28%;
   /*height: 26em; /* 350px*/
   display: inline-block;
