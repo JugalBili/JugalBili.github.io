@@ -358,7 +358,7 @@ h4 {
 }
 
 .projects .container {
-   border: 2px solid blue;
+  /*border: 2px solid blue;*/
   max-width: 90em; /* 60% */
   width: fit-content;
   position: relative;
