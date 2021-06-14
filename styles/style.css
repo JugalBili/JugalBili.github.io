@@ -231,7 +231,7 @@ h4 {
   vertical-align: top;
   /* border: 2px solid blue; */
   position: relative;
-  width: 32em;
+  width: 28em;
   height: 100%;
 
 }
@@ -283,11 +283,17 @@ h4 {
 
 .skills .skill{
   position: relative;
-  /*border: 2px solid green;*/
-  width: 30em; /* 35% / 30em*/
+  /* border: 2px solid green; */
+  width: 26em; /* 35% / 30em / 26em*/
   height:fit-content; /* 80px / 6.7em */
   display: inline-block;
-  margin: 15px 10px;
+  margin: 15px 15px;
+}
+
+@media screen and (max-width: 650px) {
+  .skills .skill{
+    width: 24em;
+  }
 }
 
 .skills .text{
@@ -298,6 +304,7 @@ h4 {
   text-align: center;
   display: inline-block;
   vertical-align: top;
+  margin: 0 5px;
 }
 
 .skills img{
@@ -313,11 +320,17 @@ h4 {
   transform: translateY(50%);
   /*border: 2px solid purple;*/
   height: 35px;
-  width: 18em; /* 65% */
+  width: 18em; /* 65% / 18em */
   display: inline-block;
   background-color: #f0f0f2;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .skills .bar{
+    width: 15em;
+  }
 }
 
 .skills .bar-inner{
@@ -449,13 +462,19 @@ h4 {
 }
 
 .experience .exp{
-  /*border: 2px solid green; */
-  width: 30em; /* 28% */
+  /*border: 2px solid green;*/
+  width: 30em; /* 28% /30em*/
   /*height: 26em; /* 350px*/
   display: inline-block;
   vertical-align: top;
   padding: 10px 10px;
   margin: 10px 20px;
+}
+
+@media screen and (max-width: 650px) {
+  .experience .exp{
+    width: 20em;
+  }
 }
 
 .experience .exp p{
