@@ -1,26 +1,25 @@
 function scrollFunct(navItem, id) {
-    var links = document.querySelectorAll(".link");
-    links.forEach((item) => {
-        item.style.color = "#000000";
-    });
-    links.forEach((item) => {
-        item.style.color = "inherit";
-    });
-    navItem.style.color = "#13aff0";
+  var links = document.querySelectorAll(".link");
+  /*links.forEach((item) => {
+    item.style.color = "#000000";
+  });
+  links.forEach((item) => {
+    item.style.color = "inherit";
+  });
+  navItem.style.color = "#13aff0";*/
 
-    var element = document.getElementById(id);
-    const offset = 60;
-    const bodyRect = document.body.getBoundingClientRect().top;
-    const elementRect = element.getBoundingClientRect().top;
-    const elementPosition = elementRect - bodyRect;
-    const offsetPosition = elementPosition - offset;
+  var element = document.getElementById(id);
+  const offset = 60;
+  const bodyRect = document.body.getBoundingClientRect().top;
+  const elementRect = element.getBoundingClientRect().top;
+  const elementPosition = elementRect - bodyRect;
+  const offsetPosition = elementPosition - offset;
 
-    window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-    });
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
 }
-
 
 /*
 var scrollFunct = function(id){

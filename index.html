@@ -23,7 +23,9 @@
   />
   <link rel="icon" href="images/favicon.png" />
   <link rel="stylesheet" href="styles/style.css" />
-  <script type="text/javascript" src="/scripts/script.js" defer></script>
+  <script type="text/javascript" src="/scripts/nav-script.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="/scripts/nav-script-scroll.js" defer></script>
 </head>
 
 <body>
@@ -38,22 +40,22 @@
             <li><a href="#experience">Experience</a></li>    
             -->
       <li>
-        <a class="link active" onclick="scrollFunct(this, 'home')">Home</a>
+        <a id="home-link" class="link active" onclick="scrollFunct(this, 'home')">Home</a>
       </li>
       <li>
-        <a class="link" onclick="scrollFunct(this, 'summary')">Summary</a>
+        <a id="summary-link" class="link" onclick="scrollFunct(this, 'summary')">Summary</a>
       </li>
       <li>
-        <a class="link" onclick="scrollFunct(this, 'education')">Education</a>
+        <a id="education-link" class="link" onclick="scrollFunct(this, 'education')">Education</a>
       </li>
       <li>
-        <a class="link" onclick="scrollFunct(this, 'skills')">Languages</a>
+        <a id="skills-link" class="link" onclick="scrollFunct(this, 'skills')">Languages</a>
       </li>
       <li>
-        <a class="link" onclick="scrollFunct(this, 'projects')">Projects</a>
+        <a id="projects-link" class="link" onclick="scrollFunct(this, 'projects')">Projects</a>
       </li>
       <li>
-        <a class="link" onclick="scrollFunct(this, 'experience')">Experience</a>
+        <a id="experience-link" class="link" onclick="scrollFunct(this, 'experience')">Experience</a>
       </li>
     </ul>
   </nav>
