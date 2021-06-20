@@ -1,27 +1,31 @@
 # Jugal's Website
 
-## Sections 
+## Sections
+
 - [Description](#description)
 - [Author](#author)
 - [License](#license)
 
 ---
+
 ## Description
-> **WEBSITE UNDER CONSTRUCTION**
 
-This is a personal portfolio webiste made to showcase my programming expreience and projects. 
-
+This is static personal portfolio website made using HTML, CSS, and Javascript to showcase my programming experiences and projects.
+<br>
+Can be found at https://jugalbili.github.io/
 
 ---
-## Author 
+
+## Author
+
 **Jugal Bilimoria**
 <br />May 24th 2021
 
 <br />Project was made as a learning experience of HTML, CSS and JavaScript.
 
 ---
-## License 
 
+## License
 
 MIT License
 
