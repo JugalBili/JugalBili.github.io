@@ -9,7 +9,9 @@ function scrollFunct(navItem, id) {
   navItem.style.color = "#13aff0";*/
 
   var element = document.getElementById(id);
-  const offset = 60;
+  const offset = document
+    .getElementById("nav-bar")
+    .getBoundingClientRect().height;
   const bodyRect = document.body.getBoundingClientRect().top;
   const elementRect = element.getBoundingClientRect().top;
   const elementPosition = elementRect - bodyRect;
