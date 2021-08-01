@@ -212,7 +212,8 @@ h4 {
   width: fit-content; /* 55% / 600px*/
   min-height: 10em; /* 125px / 10em*/
   height: fit-content;
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  /*box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);*/
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   margin: 2em 0;
   /*
@@ -307,49 +308,66 @@ h4 {
   border: 2px solid #13aff0;
 }
 
+.skills .flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .skills .skill {
-  position: relative;
   /*border: 2px solid green;*/
-  width: 26em; /* 35% / 30em / 26em*/
-  /*height:fit-content; /* 80px / 6.7em */
-  height: 6em;
-  display: inline-block;
+  position: relative;
+  width: fit-content; /*35% / 30em / 26em*/
+  /*height: fit-content; /* 80px / 6.7em 6em*/
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 15px 15px;
 }
 
+/*
 @media screen and (max-width: 650px) {
   .skills .skill {
     width: 24em;
   }
+}*/
+
+.skill .text {
+  max-width: 5em;
+  margin-top: 0.5em;
+  overflow-wrap: break-word;
 }
 
+/*
 .skills .text {
   display: inline-block;
-  /*border: 2px solid black;*/
+  /*border: 2px solid black;
   width: 25%;
   height: 100%;
   text-align: center;
   display: inline-block;
   vertical-align: top;
   margin: 0 5px;
-}
-
+}*/
+/*
 .skills img {
   height: 3.5em;
   border-radius: 50%;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
 }
-
-.skills .bar {
+*/
+/* .skills .bar {
   position: relative;
   display: inline-block;
 
   top: 50%;
   transform: translateY(-50%);
 
-  /*border: 2px solid purple;*/
+  /*border: 2px solid purple;
   height: 35px;
-  width: 18em; /* 65% / 18em */
+  width: 18em; /* 65% / 18em 
   display: inline-block;
   background-color: #f0f0f2;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
@@ -360,7 +378,7 @@ h4 {
   .skills .bar {
     width: 15em;
   }
-}
+} 
 
 .skills .bar-inner {
   position: relative;
@@ -410,7 +428,7 @@ h4 {
 .skills #graphql .bar-inner {
   width: 45%;
 }
-
+*/
 .projects {
   /* border:2px solid black; */
   height: auto; /* 1200 px*/
